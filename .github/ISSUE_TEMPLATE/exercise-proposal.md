@@ -7,7 +7,6 @@ assignees: ''
 
 ---
 
-## Episode X, Exercise Y proposal
 Complete the title above with the corresponding episode and exercise numbers.
 
 ### Brief description
