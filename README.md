@@ -6,9 +6,9 @@ This is lesson is **currently under heavy development**. Keep an eye of the [Iss
 
 ## Lesson Content
 
-The lesson content is still being developed. Consult the [project Wiki](https://github.com/carpentries-incubator/bioimage-analysis-python/wiki/Learning-Objectives) for more information.
+The lesson content is still being developed together and openly on [this CodiMD document](https://codimd.carpentries.org/LPHnyJElS1qcXmd3SFqdrA?both). Consult the [project Wiki](https://github.com/carpentries-incubator/bioimage-analysis-python/wiki) for more information.
 
-See the [CodiMD document](https://codimd.carpentries.org/_XWgpty6Q06VpTmBUA4CWw?edit) written together in our first in-person workshop to see current ideas.
+The original ideas and discussions in our first in-person workshop has been archived [here](https://codimd.carpentries.org/_XWgpty6Q06VpTmBUA4CWw?edit).
 
 ## Contribution
 
