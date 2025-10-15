@@ -271,7 +271,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-skimage-images.html">3. Working with scikit-image</a>
+        <a href="03-reading-images.html">3. Reading Images</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -283,7 +283,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-drawing.html">4. Drawing and Bitwise Operations</a>
+        <a href="04-image-exploration.html">4. Image exploration</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -295,7 +295,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-creating-histograms.html">5. Creating Histograms</a>
+        <a href="05-preprocessing.html">5. Preprocessing and filtering</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -307,7 +307,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-blurring.html">6. Blurring Images</a>
+        <a href="06-processing-segmentation.html">6. Processing and segmentation</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -319,7 +319,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-thresholding.html">7. Thresholding</a>
+        <a href="07-postprocessing.html">7. Post-processing with filters</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -331,7 +331,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-connected-components.html">8. Connected Component Analysis</a>
+        <a href="08-measurements.html">8. Measurements</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -343,7 +343,19 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-challenges.html">9. Capstone Challenge</a>
+        <a href="09-validation.html">9. Validation</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush11">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading11">
+        <a href="10-challenges.html">10. Capstone Challenge</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -444,7 +456,7 @@ smaller, but image quality may suffer.</li>
 compression.</li>
 <li>Depending on the camera or sensor, various useful pieces of
 information may be stored in an image file, in the image metadata.</li>
-</ul></section><section id="03-skimage-images"><h2 class="section-heading"><a href="03-skimage-images.html">Working with scikit-image</a></h2>
+</ul></section><section id="03-reading-images"><h2 class="section-heading"><a href="03-reading-images.html">Reading Images</a></h2>
 <hr class="half-width">
 <ul>
 <li>Images are read from disk with the <code>iio.imread()</code>
@@ -465,45 +477,9 @@ pixels of an image.</li>
 images, e.g., <code>clip = image[60:150, 135:480, :]</code>.</li>
 <li>Metadata is not retained when images are loaded as NumPy arrays
 using <code>iio.imread()</code>.</li>
-</ul></section><section id="04-drawing"><h2 class="section-heading"><a href="04-drawing.html">Drawing and Bitwise Operations</a></h2>
-<hr class="half-width">
-<ul>
-<li>We can use the NumPy <code>zeros()</code> function to create a
-blank, black image.</li>
-<li>We can draw on scikit-image images with functions such as
-<code>ski.draw.rectangle()</code>, <code>ski.draw.disk()</code>,
-<code>ski.draw.line()</code>, and more.</li>
-<li>The drawing functions return indices to pixels that can be set
-directly.</li>
-</ul></section><section id="05-creating-histograms"><h2 class="section-heading"><a href="05-creating-histograms.html">Creating Histograms</a></h2>
-<hr class="half-width">
-<ul>
-<li>In many cases, we can load images in grayscale by passing the
-<code>mode="L"</code> argument to the <code>iio.imread()</code>
-function.</li>
-<li>We can create histograms of images with the
-<code>np.histogram</code> function.</li>
-<li>We can display histograms using <code>ax.plot()</code> with the
-<code>bin_edges</code> and <code>histogram</code> values returned by
-<code>np.histogram()</code>.</li>
-<li>The plot can be customised using <code>ax.set_xlabel()</code>,
-<code>ax.set_ylabel()</code>, <code>ax.set_xlim()</code>,
-<code>ax.set_ylim()</code>, and <code>ax.set_title()</code>.</li>
-<li>We can separate the colour channels of an RGB image using slicing
-operations and create histograms for each colour channel
-separately.</li>
-</ul></section><section id="06-blurring"><h2 class="section-heading"><a href="06-blurring.html">Blurring Images</a></h2>
-<hr class="half-width">
-<ul>
-<li>Applying a low-pass blurring filter smooths edges and removes noise
-from an image.</li>
-<li>Blurring is often used as a first step before we perform
-thresholding or edge detection.</li>
-<li>The Gaussian blur can be applied to an image with the
-<code>ski.filters.gaussian()</code> function.</li>
-<li>Larger sigma values may remove more noise, but they will also remove
-detail from an image.</li>
-</ul></section><section id="07-thresholding"><h2 class="section-heading"><a href="07-thresholding.html">Thresholding</a></h2>
+</ul></section><section id="04-image-exploration"><h2 class="section-heading"><a href="04-image-exploration.html">Image exploration</a></h2>
+<hr class="half-width"></section><section id="05-preprocessing"><h2 class="section-heading"><a href="05-preprocessing.html">Preprocessing and filtering</a></h2>
+<hr class="half-width"></section><section id="06-processing-segmentation"><h2 class="section-heading"><a href="06-processing-segmentation.html">Processing and segmentation</a></h2>
 <hr class="half-width">
 <ul>
 <li>Thresholding produces a binary image, where all pixels with
@@ -516,7 +492,7 @@ channel. They are boolean, hence they contain the values 0 (off) and 1
 <li>Thresholding can be used to create masks that select only the
 interesting parts of an image, or as the first step before edge
 detection or finding contours.</li>
-</ul></section><section id="08-connected-components"><h2 class="section-heading"><a href="08-connected-components.html">Connected Component Analysis</a></h2>
+</ul></section><section id="07-postprocessing"><h2 class="section-heading"><a href="07-postprocessing.html">Post-processing with filters</a></h2>
 <hr class="half-width">
 <ul>
 <li>We can use <code>ski.measure.label</code> to find and label
@@ -527,7 +503,9 @@ properties of labeled objects.</li>
 small objects and remove artifacts from an image.</li>
 <li>We can display the labeled image to view the objects coloured by
 label.</li>
-</ul></section><section id="09-challenges"><h2 class="section-heading"><a href="09-challenges.html">Capstone Challenge</a></h2>
+</ul></section><section id="08-measurements"><h2 class="section-heading"><a href="08-measurements.html">Measurements</a></h2>
+<hr class="half-width"></section><section id="09-validation"><h2 class="section-heading"><a href="09-validation.html">Validation</a></h2>
+<hr class="half-width"></section><section id="10-challenges"><h2 class="section-heading"><a href="10-challenges.html">Capstone Challenge</a></h2>
 <hr class="half-width">
 <ul>
 <li>Using thresholding, connected component analysis and other tools we
@@ -582,8 +560,8 @@ those involving morphometrics.</li>
   "url": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/key-points.html",
   "identifier": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/key-points.html",
   "dateCreated": "2025-04-08",
-  "dateModified": "2025-10-14",
-  "datePublished": "2025-10-14"
+  "dateModified": "2025-10-15",
+  "datePublished": "2025-10-15"
 }
 
   </script><script>

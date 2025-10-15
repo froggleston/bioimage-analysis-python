@@ -7,16 +7,31 @@
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/02-image-basics.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/03-reading-images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/03-skimage-images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/04-drawing.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/04-image-exploration.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/05-creating-histograms.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/05-preprocessing.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/06-blurring.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/06-processing-segmentation.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/07-postprocessing.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/07-thresholding.html</loc>
@@ -25,7 +40,16 @@
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/08-connected-components.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/08-measurements.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/09-challenges.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/09-validation.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/10-challenges.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/404.html</loc>
@@ -61,16 +85,31 @@
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/02-image-basics.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/03-reading-images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/03-skimage-images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/04-drawing.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/04-image-exploration.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/05-creating-histograms.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/05-preprocessing.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/06-blurring.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/06-processing-segmentation.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/07-postprocessing.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/07-thresholding.html</loc>
@@ -79,7 +118,16 @@
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/08-connected-components.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/08-measurements.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/09-challenges.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/09-validation.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/10-challenges.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/404.html</loc>

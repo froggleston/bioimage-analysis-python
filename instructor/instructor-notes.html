@@ -271,7 +271,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-skimage-images.html">3. Working with scikit-image</a>
+        <a href="03-reading-images.html">3. Reading Images</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -283,7 +283,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-drawing.html">4. Drawing and Bitwise Operations</a>
+        <a href="04-image-exploration.html">4. Image exploration</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -295,7 +295,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-creating-histograms.html">5. Creating Histograms</a>
+        <a href="05-preprocessing.html">5. Preprocessing and filtering</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -307,7 +307,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-blurring.html">6. Blurring Images</a>
+        <a href="06-processing-segmentation.html">6. Processing and segmentation</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -319,7 +319,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-thresholding.html">7. Thresholding</a>
+        <a href="07-postprocessing.html">7. Post-processing with filters</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -331,7 +331,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-connected-components.html">8. Connected Component Analysis</a>
+        <a href="08-measurements.html">8. Measurements</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -343,7 +343,19 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-challenges.html">9. Capstone Challenge</a>
+        <a href="09-validation.html">9. Validation</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush11">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading11">
+        <a href="10-challenges.html">10. Capstone Challenge</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -555,23 +567,13 @@ designed to be edge-preserving.</p>
 Jupyter when the <kbd>caps lock</kbd> key is active.</p>
 </section><section id="aggregate-instructor-notes"><section id="01-introduction"><h2 class="section-heading"><a href="01-introduction.html">Introduction</a></h2>
 <hr class="half-width"></section><section id="02-image-basics"><h2 class="section-heading"><a href="02-image-basics.html">Image Basics</a></h2>
-<hr class="half-width"></section><section id="03-skimage-images"><h2 class="section-heading"><a href="03-skimage-images.html">Working with scikit-image</a></h2>
-<hr class="half-width"></section><section id="04-drawing"><h2 class="section-heading"><a href="04-drawing.html">Drawing and Bitwise Operations</a></h2>
-<hr class="half-width"></section><section id="05-creating-histograms"><h2 class="section-heading"><a href="05-creating-histograms.html">Creating Histograms</a></h2>
-<hr class="half-width"></section><section id="06-blurring"><h2 class="section-heading"><a href="06-blurring.html">Blurring Images</a></h2>
+<hr class="half-width"></section><section id="03-reading-images"><h2 class="section-heading"><a href="03-reading-images.html">Reading Images</a></h2>
+<hr class="half-width"></section><section id="04-image-exploration"><h2 class="section-heading"><a href="04-image-exploration.html">Image exploration</a></h2>
+<hr class="half-width"></section><section id="05-preprocessing"><h2 class="section-heading"><a href="05-preprocessing.html">Preprocessing and filtering</a></h2>
+<hr class="half-width"></section><section id="06-processing-segmentation"><h2 class="section-heading"><a href="06-processing-segmentation.html">Processing and segmentation</a></h2>
 <hr class="half-width">
-<h3 id="06-blurring-headingInstructor1">
-<a href="06-blurring.html#headingInstructor1">Terminology about image boundaries</a><a class="anchor" aria-label="anchor" href="#06-blurring-headingInstructor1"></a>
-</h3>
-<p>Take care to avoid mixing up the term “edge” to describe the edges of
-objects <em>within</em> an image and the outer boundaries of the images
-themselves. Lack of a clear distinction here may be confusing for
-learners.</p>
-<hr>
-<br></section><section id="07-thresholding"><h2 class="section-heading"><a href="07-thresholding.html">Thresholding</a></h2>
-<hr class="half-width">
-<h3 id="07-thresholding-headingInstructor1">
-<a href="07-thresholding.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#07-thresholding-headingInstructor1"></a>
+<h3 id="06-processing-segmentation-headingInstructor1">
+<a href="06-processing-segmentation.html#headingInstructor1">Instructor Note</a><a class="anchor" aria-label="anchor" href="#06-processing-segmentation-headingInstructor1"></a>
 </h3>
 <p>The histogram of the maize root image may prompt questions from
 learners about the interpretation of the peaks and the broader region
@@ -584,8 +586,10 @@ histograms. While these points can lead to fruitful considerations, the
 text in this episode attempts to reduce cognitive load and deliberately
 simplifies the discussion.</p>
 <hr>
-<br></section><section id="08-connected-components"><h2 class="section-heading"><a href="08-connected-components.html">Connected Component Analysis</a></h2>
-<hr class="half-width"></section><section id="09-challenges"><h2 class="section-heading"><a href="09-challenges.html">Capstone Challenge</a></h2>
+<br></section><section id="07-postprocessing"><h2 class="section-heading"><a href="07-postprocessing.html">Post-processing with filters</a></h2>
+<hr class="half-width"></section><section id="08-measurements"><h2 class="section-heading"><a href="08-measurements.html">Measurements</a></h2>
+<hr class="half-width"></section><section id="09-validation"><h2 class="section-heading"><a href="09-validation.html">Validation</a></h2>
+<hr class="half-width"></section><section id="10-challenges"><h2 class="section-heading"><a href="10-challenges.html">Capstone Challenge</a></h2>
 <hr class="half-width"></section></section>
 </div>
     </main>
@@ -634,8 +638,8 @@ simplifies the discussion.</p>
   "url": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/instructor-notes.html",
   "identifier": "https://carpentries-incubator.github.io/bioimage-analysis-python/instructor/instructor-notes.html",
   "dateCreated": "2025-04-08",
-  "dateModified": "2025-10-14",
-  "datePublished": "2025-10-14"
+  "dateModified": "2025-10-15",
+  "datePublished": "2025-10-15"
 }
 
   </script><script>
